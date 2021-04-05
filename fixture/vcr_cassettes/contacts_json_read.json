@@ -1,0 +1,31 @@
+[
+    {
+        "request": {
+            "body": "",
+            "headers": {
+                "X-Api-Key": "E7IhEbGz3YKVv7BgOyIhr2cs9ikIn8ssXpymLgtoR1AsvtAl0xwjOqkAuDJN1WoW",
+                "SentWith": "elixir-test"
+            },
+            "method": "get",
+            "options": [],
+            "request_body": "",
+            "url": "https://gateway.sms77.io/api/contacts?action=read&json=1"
+        },
+        "response": {
+            "binary": false,
+            "body": "[{\"ID\":\"5800718\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5800723\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5800724\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"3172517\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720527\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720528\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720529\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720530\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720531\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720532\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720533\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720549\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720551\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720554\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720555\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720556\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720557\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720558\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5668091\",\"Name\":\"Matta, Andre\",\"Number\":\"004917666666666\"},{\"ID\":\"4848432\",\"Name\":\"Petra Pan\",\"Number\":\"00513414\"},{\"ID\":\"4848436\",\"Name\":\"TimTester\",\"Number\":\"004901234515134\"},{\"ID\":\"4954787\",\"Name\":\"Tommy Testersen\",\"Number\":\"0049123459877676\"}]",
+            "headers": {
+                "Date": "Wed, 07 Apr 2021 12:10:05 GMT",
+                "Server": "Apache",
+                "Upgrade": "h2",
+                "Connection": "Upgrade",
+                "Vary": "Accept-Encoding",
+                "X-Frame-Options": "SAMEORIGIN",
+                "Transfer-Encoding": "chunked",
+                "Content-Type": "text/plain;charset=UTF-8"
+            },
+            "status_code": 200,
+            "type": "ok"
+        }
+    }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "request": {
+      "body": "action=write",
+      "headers": {
+        "X-Api-Key": "E7IhEbGz3YKVv7BgOyIhr2cs9ikIn8ssXpymLgtoR1AsvtAl0xwjOqkAuDJN1WoW",
+        "SentWith": "elixir-test"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://gateway.sms77.io/api/contacts"
+    },
+    "response": {
+      "binary": false,
+      "body": "152\n5800726",
+      "headers": {
+        "Date": "Wed, 07 Apr 2021 12:10:25 GMT",
+        "Server": "Apache",
+        "Upgrade": "h2",
+        "Connection": "Upgrade",
+        "Vary": "Accept-Encoding",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "text/plain;charset=UTF-8"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

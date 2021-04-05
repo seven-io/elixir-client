@@ -1,0 +1,58 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "X-Api-Key": "E7IhEbGz3YKVv7BgOyIhr2cs9ikIn8ssXpymLgtoR1AsvtAl0xwjOqkAuDJN1WoW",
+        "SentWith": "elixir-test"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://gateway.sms77.io/api/contacts?action=write&json=1"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"return\":\"152\",\"id\":5800728}",
+      "headers": {
+        "Date": "Wed, 07 Apr 2021 12:13:07 GMT",
+        "Server": "Apache",
+        "Upgrade": "h2",
+        "Connection": "Upgrade",
+        "Vary": "Accept-Encoding",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "text/plain;charset=UTF-8"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "action=del&id=5800728",
+      "headers": {
+        "X-Api-Key": "E7IhEbGz3YKVv7BgOyIhr2cs9ikIn8ssXpymLgtoR1AsvtAl0xwjOqkAuDJN1WoW",
+        "SentWith": "elixir-test"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://gateway.sms77.io/api/contacts"
+    },
+    "response": {
+      "binary": false,
+      "body": "152",
+      "headers": {
+        "Date": "Wed, 07 Apr 2021 12:13:07 GMT",
+        "Server": "Apache",
+        "Vary": "Accept-Encoding",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "text/plain;charset=UTF-8"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

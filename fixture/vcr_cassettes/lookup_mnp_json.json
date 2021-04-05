@@ -1,0 +1,31 @@
+[
+  {
+    "request": {
+      "body": "json=1&number=491771783130&type=mnp",
+      "headers": {
+        "X-Api-Key": "E7IhEbGz3YKVv7BgOyIhr2cs9ikIn8ssXpymLgtoR1AsvtAl0xwjOqkAuDJN1WoW",
+        "SentWith": "elixir-test"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://gateway.sms77.io/api/lookup"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"success\":true,\"code\":100,\"price\":0.005,\"mnp\":{\"country\":\"DE\",\"number\":\"+491771783130\",\"national_format\":\"0177 1783130\",\"international_formatted\":\"+49 177 1783130\",\"network\":\"Telef\\u00f3nica Germany GmbH & Co. oHG (O2)\",\"mccmnc\":\"26203\",\"isPorted\":false}}",
+      "headers": {
+        "Date": "Wed, 07 Apr 2021 12:16:02 GMT",
+        "Server": "Apache",
+        "Upgrade": "h2",
+        "Connection": "Upgrade",
+        "Vary": "Accept-Encoding",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "text/plain; charset=utf-8"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "request": {
+      "body": "msg_id=77137151122",
+      "headers": {
+        "X-Api-Key": "E7IhEbGz3YKVv7BgOyIhr2cs9ikIn8ssXpymLgtoR1AsvtAl0xwjOqkAuDJN1WoW",
+        "SentWith": "elixir-test"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://gateway.sms77.io/api/status"
+    },
+    "response": {
+      "binary": false,
+      "body": "DELIVERED\n2021-04-01 12:11:11.000",
+      "headers": {
+        "Date": "Wed, 07 Apr 2021 12:19:10 GMT",
+        "Server": "Apache",
+        "Upgrade": "h2",
+        "Connection": "Upgrade",
+        "Vary": "Accept-Encoding",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "text/plain; charset=utf-8"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "request": {
+      "body": "number=491771783130&type=hlr",
+      "headers": {
+        "X-Api-Key": "E7IhEbGz3YKVv7BgOyIhr2cs9ikIn8ssXpymLgtoR1AsvtAl0xwjOqkAuDJN1WoW",
+        "SentWith": "elixir-test"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://gateway.sms77.io/api/lookup"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"status\":true,\"status_message\":\"success\",\"lookup_outcome\":true,\"lookup_outcome_message\":\"success\",\"international_format_number\":\"491771783130\",\"international_formatted\":\"+49 177 1783130\",\"national_format_number\":\"0177 1783130\",\"country_code\":\"DE\",\"country_name\":\"Germany\",\"country_prefix\":\"49\",\"current_carrier\":{\"network_code\":\"26207\",\"name\":\"Telef\\u00f3nica Germany GmbH & Co. oHG (O2)\",\"country\":\"DE\",\"network_type\":\"mobile\"},\"original_carrier\":{\"network_code\":\"26207\",\"name\":\"Telef\\u00f3nica Germany GmbH & Co. oHG (O2)\",\"country\":\"DE\",\"network_type\":\"mobile\"},\"valid_number\":\"valid\",\"reachable\":\"reachable\",\"ported\":\"assumed_not_ported\",\"roaming\":\"not_roaming\",\"gsm_code\":\"0\",\"gsm_message\":\"No error\"}",
+      "headers": {
+        "Date": "Wed, 07 Apr 2021 12:16:11 GMT",
+        "Server": "Apache",
+        "Upgrade": "h2",
+        "Connection": "Upgrade",
+        "Vary": "Accept-Encoding",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "text/plain; charset=utf-8"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

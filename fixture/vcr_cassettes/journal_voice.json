@@ -1,0 +1,31 @@
+[
+    {
+        "request": {
+            "body": "",
+            "headers": {
+                "X-Api-Key": "E7IhEbGz3YKVv7BgOyIhr2cs9ikIn8ssXpymLgtoR1AsvtAl0xwjOqkAuDJN1WoW",
+                "SentWith": "elixir-test"
+            },
+            "method": "get",
+            "options": [],
+            "request_body": "",
+            "url": "https://gateway.sms77.io/api/journal?type=voice"
+        },
+        "response": {
+            "binary": false,
+            "body": "[{\"id\":\"214954\",\"from\":\"491771783130\",\"to\":\"4917666666666\",\"xml\":false,\"text\":\"HI2U\",\"duration\":\"3\",\"status\":\"completed\",\"error\":\"\",\"timestamp\":\"2021-02-25 11:22:48\",\"price\":\"0.075\"},{\"id\":\"214896\",\"from\":\"491771783130\",\"to\":\"4917666666666\",\"xml\":false,\"text\":\"HI2U\",\"duration\":\"3\",\"status\":\"completed\",\"error\":\"\",\"timestamp\":\"2021-02-25 10:40:34\",\"price\":\"0.075\"},{\"id\":\"212578\",\"from\":\"491771783130\",\"to\":\"4917666666666\",\"xml\":false,\"text\":\"HI2U\",\"duration\":\"3\",\"status\":\"completed\",\"error\":\"\",\"timestamp\":\"2021-02-17 15:58:16\",\"price\":\"0.075\"}]",
+            "headers": {
+                "Date": "Wed, 07 Apr 2021 12:15:49 GMT",
+                "Server": "Apache",
+                "Upgrade": "h2",
+                "Connection": "Upgrade",
+                "Vary": "Accept-Encoding",
+                "X-Frame-Options": "SAMEORIGIN",
+                "Transfer-Encoding": "chunked",
+                "Content-Type": "text/plain; charset=utf-8"
+            },
+            "status_code": 200,
+            "type": "ok"
+        }
+    }
+]
