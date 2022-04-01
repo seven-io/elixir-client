@@ -10,6 +10,18 @@ defmodule Sms77.SmsTest do
     HTTPoison.start()
   end
 
+  @tag :sms_delete
+  test "returns an error because no IDs supplied" do
+    use_cassette "sms_delete" do
+      response = Sms.delete!(%{
+        ids: [], # empty list
+      })
+
+      assert false === response.success
+      assert nil === response.deleted
+    end
+  end
+
   @tag :sms_default
   test "returns a code on success" do
     use_cassette "sms_default" do
@@ -29,7 +41,7 @@ defmodule Sms77.SmsTest do
         from: "Elixir",
         json: 1,
         text: "HI2U!",
-        to: System.get_env("SMS77_RECIPIENT"),
+        to: "+491771783130",
       }
       response = Sms.post!(params)
 

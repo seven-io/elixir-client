@@ -12,20 +12,20 @@ defmodule Sms77.Mixfile do
       description: description(),
       elixir: "~> 1.7",
       package: package(),
-      source_url: "https://github.com/sms77io/elixir",
+      source_url: "https://github.com/sms77io/elixir-client",
       version: "0.1.0",
     ]
   end
 
   def application do
     [
-      extra_applications: [:logger]
+      extra_applications: [:logger, :crypto]
     ]
   end
 
   defp description do
     """
-    A basic Elixir wrapper for the Sms77.io SMS Gateway API.
+    A basic Elixir wrapper for the sms77 SMS Gateway API.
     """
   end
 
@@ -44,7 +44,7 @@ defmodule Sms77.Mixfile do
       files: ["lib", "mix.exs", "README.md", "LICENSE"],
       licenses: ["MIT"],
       links: %{
-        "GitHub" => "https://github.com/sms77io/elixir"
+        "GitHub" => "https://github.com/sms77io/elixir-client"
       },
       maintainers: ["sms77 e.K."],
     ]

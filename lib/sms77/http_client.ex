@@ -1,6 +1,6 @@
 defmodule Sms77.HTTPClient do
   @moduledoc """
-  Poison HTTP Client for Sms77
+  Poison HTTP Client for sms77
   """
 
   use HTTPoison.Base
