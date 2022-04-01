@@ -43,8 +43,18 @@ defmodule Sms77.HTTPClient do
       iex> Sms77.HTTPClient.process_request_headers([])
       [{"X-Api-Key", "Your API key"}]
 
+      iex> Application.put_env(:sms77, :api_key, "Bearer xyz123")
+      iex> Sms77.HTTPClient.process_request_headers([])
+      [{"Authorization", "Bearer xyz123"}]
+
   """
   def process_request_headers(headers) do
-    [{"X-Api-Key", Config.api_key!()}, {"SentWith", Config.sent_with!()} | headers]
+    authToken = Config.api_key!()
+    authKey = if String.starts_with?(authToken, "Bearer "), do: "Authorization", else: "X-Api-Key"
+    [
+      {authKey, authToken},
+      {"SentWith", Config.sent_with!()}
+      | headers
+    ]
   end
 end
