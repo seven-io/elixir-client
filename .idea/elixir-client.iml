@@ -41,6 +41,14 @@
       <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/metrics" />
       <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/unicode_util_compat" />
       <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/idna" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/httpoison" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/hackney" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/ssl_verify_fun" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/makeup_elixir" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/certifi" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/jason" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/makeup_erlang" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/dev/lib/ex_doc" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
