@@ -1,0 +1,31 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "X-Api-Key": "E7IhEbGz3YKVv7BgOyIhr2cs9ikIn8ssXpymLgtoR1AsvtAl0xwjOqkAuDJN1WoW",
+        "SentWith": "elixir-test"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://gateway.sms77.io/api/subaccounts?action=read"
+    },
+    "response": {
+      "binary": false,
+      "body": "[{\"id\":941955,\"username\":null,\"company\":\"\",\"balance\":2,\"total_usage\":0,\"auto_topup\":{\"threshold\":1,\"amount\":1},\"contact\":{\"name\":\"Tanya Tester\",\"email\":\"tanya.tester@seven.io\"}},{\"id\":941956,\"username\":null,\"company\":\"\",\"balance\":0,\"total_usage\":0,\"auto_topup\":{\"threshold\":null,\"amount\":null},\"contact\":{\"name\":\"Torge Test\",\"email\":\"torge.test@seven.dev\"}},{\"id\":941967,\"username\":null,\"company\":\"\",\"balance\":35,\"total_usage\":0,\"auto_topup\":{\"threshold\":22,\"amount\":35},\"contact\":{\"name\":\"Torge Tester\",\"email\":\"torge.tester@seven.dev\"}},{\"id\":942011,\"username\":null,\"company\":\"\",\"balance\":0,\"total_usage\":0,\"auto_topup\":{\"threshold\":null,\"amount\":null},\"contact\":{\"name\":\"Tommy Testing\",\"email\":\"tommy_testing@seven.dev\"}},{\"id\":942012,\"username\":null,\"company\":\"\",\"balance\":0,\"total_usage\":0,\"auto_topup\":{\"threshold\":null,\"amount\":null},\"contact\":{\"name\":\"Tommy Testing\",\"email\":\"tom_tester@seven.dev\"}},{\"id\":942013,\"username\":null,\"company\":\"\",\"balance\":0,\"total_usage\":0,\"auto_topup\":{\"threshold\":null,\"amount\":null},\"contact\":{\"name\":\"Tommy Testing\",\"email\":\"tonya_test@seven.dev\"}},{\"id\":942014,\"username\":null,\"company\":\"\",\"balance\":0,\"total_usage\":0,\"auto_topup\":{\"threshold\":null,\"amount\":null},\"contact\":{\"name\":\"Tommy Testing\",\"email\":\"toni_testa@seven.dev\"}}]",
+      "headers": {
+        "Date": "Fri, 01 Apr 2022 17:16:04 GMT",
+        "Server": "Apache",
+        "X-sms77-trace-id": "461150685",
+        "Upgrade": "h2",
+        "Connection": "Upgrade",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "application/json"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

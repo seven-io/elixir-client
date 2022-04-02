@@ -1,0 +1,31 @@
+[
+  {
+    "request": {
+      "body": "action=transfer_credits&amount=&id=",
+      "headers": {
+        "X-Api-Key": "E7IhEbGz3YKVv7BgOyIhr2cs9ikIn8ssXpymLgtoR1AsvtAl0xwjOqkAuDJN1WoW",
+        "SentWith": "elixir-test"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://gateway.sms77.io/api/subaccounts"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"success\":false,\"error\":\"Invalid amount\"}",
+      "headers": {
+        "Date": "Sat, 02 Apr 2022 15:35:31 GMT",
+        "Server": "Apache",
+        "X-sms77-trace-id": "461947329",
+        "Upgrade": "h2",
+        "Connection": "Upgrade",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "application/json"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

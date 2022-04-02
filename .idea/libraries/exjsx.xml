@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="exjsx" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/test/lib/exjsx/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/exjsx/ebin" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/exjsx/lib" />
+      <root url="file://$PROJECT_DIR$/deps/exjsx/lib" />
+      <root url="file://$PROJECT_DIR$/deps/exjsx/lib" />
+      <root url="file://$PROJECT_DIR$/deps/exjsx/lib" />
+      <root url="file://$PROJECT_DIR$/deps/exjsx/lib" />
+      <root url="file://$PROJECT_DIR$/deps/exjsx/lib" />
+    </SOURCES>
+  </library>
+</component>
