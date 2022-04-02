@@ -4,6 +4,8 @@ defmodule Sms77.Journal do
   alias HTTPoison.Response
   alias Sms77.HTTPClient
 
+  @endpoint "journal"
+
   @enforce_keys [:from, :id, :price, :text, :timestamp, :to]
   defstruct [
     :connection,
@@ -49,8 +51,11 @@ defmodule Sms77.Journal do
     }
   end
 
+  @spec get(map()) :: {:ok, [map()]} | {:error, HTTPoison.Error | any()}
   def get(params) do
-    case HTTPClient.get("journal", [], params: params) do
+    qs = URI.encode_query(params)
+
+    case HTTPClient.get(@endpoint <> "?" <> qs) do
       {:ok, %Response{status_code: 200, body: body}} ->
         {:ok, Enum.map(body, fn a -> new(a) end)}
 
@@ -62,6 +67,7 @@ defmodule Sms77.Journal do
     end
   end
 
+  @spec get!(map()) :: [map()]
   def get!(params) do
     {:ok, analytics} = get(params)
     analytics

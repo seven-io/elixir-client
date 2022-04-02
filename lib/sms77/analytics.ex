@@ -4,31 +4,34 @@ defmodule Sms77.Analytics do
   alias HTTPoison.Response
   alias Sms77.HTTPClient
 
+  @endpoint "analytics"
+
   @type group_by :: :country | :date | :label | :subaccount
   @type params :: {
-                    group_by :: String,
-                    start :: String,
-                    end_ :: String,
-                    label :: String,
-                    subaccounts :: String,
-                  }
+    group_by :: String.t(),
+    start :: String.t(),
+    end_ :: String.t(),
+    label :: String.t(),
+    subaccounts :: String.t(),
+  }
 
-
-  @enforce_keys [:direct, :economy, :hlr, :inbound, :mnp, :usage_eur, :voice]
-  defstruct [
-    # TODO?
-    :account,
-    # TODO?
-    :country,
-    # TODO?
-    :date,
-    :direct,
-    :economy,
+  @enforce_keys [
     :hlr,
     :inbound,
-    # TODO?
-    :label,
     :mnp,
+    :sms,
+    :usage_eur,
+    :voice
+  ]
+  defstruct [
+    :account, # TODO?
+    :country, # TODO?
+    :date, # TODO?
+    :hlr,
+    :inbound,
+    :label, # TODO?
+    :mnp,
+    :sms,
     :usage_eur,
     :voice,
   ]
@@ -38,32 +41,21 @@ defmodule Sms77.Analytics do
       account: attributes[:account], # TODO?
       country: attributes[:country], # TODO?
       date: attributes[:date], # TODO?
-      direct: attributes[:direct],
-      economy: attributes[:economy],
       hlr: attributes[:hlr],
       inbound: attributes[:inbound],
       label: attributes[:label], # TODO?
       mnp: attributes[:mnp],
+      sms: attributes[:sms],
       usage_eur: attributes[:usage_eur],
       voice: attributes[:voice],
     }
   end
 
+  @spec get(map()) :: {:ok, [map()]} | {:error, HTTPoison.Error | any()}
   def get(params) do
-    qs = %{
-      end: Map.get(params, "end"),
-      group_by: Map.get(params, "group_by"),
-      label: Map.get(params, "label"),
-      start: Map.get(params, "start"),
-      subaccounts: Map.get(params, "subaccounts")
-    }
-    Enum.each qs, fn {k, v} ->
-      if (v === nil) do
-        Map.delete(qs, k)
-      end
-    end
+    qs = URI.encode_query(params)
 
-    case HTTPClient.get("analytics", [], params: qs) do
+    case HTTPClient.get(@endpoint <> "?" <> qs) do
       {:ok, %Response{status_code: 200, body: body}} ->
         {:ok, Enum.map(body, fn a -> new(a) end)}
 
@@ -75,6 +67,7 @@ defmodule Sms77.Analytics do
     end
   end
 
+  @spec get!(map()) :: map()
   def get!(params) do
     {:ok, analytics} = get(params)
     analytics

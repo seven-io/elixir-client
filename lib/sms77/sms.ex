@@ -4,6 +4,9 @@ defmodule Sms77.Sms do
   alias HTTPoison.Response
   alias Sms77.HTTPClient
 
+  @endpoint "sms"
+
+  @spec delete(map()) :: {:ok, map()} | {:error, HTTPoison.Error | any()}
   def delete(params) do
     case HTTPClient.delete("sms?ids=" <> Jason.encode!(params)) do
       {:ok, %Response{status_code: 200, body: body}} -> {:ok, body}
@@ -12,13 +15,15 @@ defmodule Sms77.Sms do
     end
   end
 
+  @spec delete!(map()) :: map()
   def delete!(params) do
     {:ok, response} = delete(params)
     response
   end
 
+  @spec post(map()) :: {:ok, String.t() | map()} | {:error, HTTPoison.Error | any()}
   def post(params) do
-    case HTTPClient.post("sms", {:form, Map.to_list(params)}) do
+    case HTTPClient.post(@endpoint, {:form, Map.to_list(params)}) do
       {:ok, %Response{status_code: 200, body: body}} -> {:ok, body}
 
       {:ok, %Response{status_code: _, body: body}} -> {:error, body}
@@ -27,6 +32,7 @@ defmodule Sms77.Sms do
     end
   end
 
+  @spec post!(map()) :: String.t() | map()
   def post!(params) do
     {:ok, response} = post(params)
     response

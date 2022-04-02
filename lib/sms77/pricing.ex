@@ -4,13 +4,13 @@ defmodule Sms77.Pricing do
   alias HTTPoison.Response
   alias Sms77.HTTPClient
 
-  def get(params) do
-    #    qs = %{
-    #      country: Map.get(params, :country),
-    #      format: Map.get(params, :format),
-    #    }
+  @endpoint "pricing"
 
-    case HTTPClient.get("pricing", [], params: params) do
+  @spec get(map()) :: {:ok, String.t() | map()} | {:error, HTTPoison.Error | any()}
+  def get(params) do
+    qs = URI.encode_query(params)
+
+    case HTTPClient.get(@endpoint <> "?" <> qs) do
       {:ok, %Response{status_code: 200, body: body}} -> {:ok, body}
 
       {:ok, %Response{status_code: _, body: body}} -> {:error, body}
@@ -19,6 +19,7 @@ defmodule Sms77.Pricing do
     end
   end
 
+  @spec get!(map()) :: String.t() | map()
   def get!(params) do
     {:ok, response} = get(params)
     response

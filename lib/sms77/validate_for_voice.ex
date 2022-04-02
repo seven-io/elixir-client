@@ -4,8 +4,11 @@ defmodule Sms77.ValidateForVoice do
   alias HTTPoison.Response
   alias Sms77.HTTPClient
 
+  @endpoint "validate_for_voice"
+
+  @spec post(map()) :: {:ok, map()} | {:error, HTTPoison.Error | any()}
   def post(params) do
-    case HTTPClient.post("validate_for_voice", {:form, Map.to_list(params)}) do
+    case HTTPClient.post(@endpoint, {:form, Map.to_list(params)}) do
       {:ok, %Response{status_code: 200, body: body}} -> {:ok, body}
 
       {:ok, %Response{status_code: _, body: body}} -> {:error, body}
@@ -14,6 +17,7 @@ defmodule Sms77.ValidateForVoice do
     end
   end
 
+  @spec post!(map()) :: map()
   def post!(params) do
     {:ok, response} = post(params)
     response
