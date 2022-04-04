@@ -23,6 +23,7 @@ defmodule Sms77.Analytics do
     :usage_eur,
     :voice
   ]
+
   defstruct [
     :account, # TODO?
     :country, # TODO?
@@ -67,7 +68,7 @@ defmodule Sms77.Analytics do
     end
   end
 
-  @spec get!(map()) :: map()
+  @spec get!(map()) :: [map()]
   def get!(params) do
     {:ok, analytics} = get(params)
     analytics
