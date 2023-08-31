@@ -1,31 +1,28 @@
 [
-    {
-        "request": {
-            "body": "",
-            "headers": {
-                "X-Api-Key": "E7IhEbGz3YKVv7BgOyIhr2cs9ikIn8ssXpymLgtoR1AsvtAl0xwjOqkAuDJN1WoW",
-                "SentWith": "elixir-test"
-            },
-            "method": "get",
-            "options": [],
-            "request_body": "",
-            "url": "https://gateway.sms77.io/api/contacts?action=read&json=1"
-        },
-        "response": {
-            "binary": false,
-            "body": "[{\"ID\":\"5800718\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5800723\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5800724\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"3172517\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720527\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720528\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720529\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720530\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720531\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720532\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720533\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720549\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720551\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720554\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720555\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720556\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720557\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5720558\",\"Name\":\"\",\"Number\":\"\"},{\"ID\":\"5668091\",\"Name\":\"Matta, Andre\",\"Number\":\"004917666666666\"},{\"ID\":\"4848432\",\"Name\":\"Petra Pan\",\"Number\":\"00513414\"},{\"ID\":\"4848436\",\"Name\":\"TimTester\",\"Number\":\"004901234515134\"},{\"ID\":\"4954787\",\"Name\":\"Tommy Testersen\",\"Number\":\"0049123459877676\"}]",
-            "headers": {
-                "Date": "Wed, 07 Apr 2021 12:10:05 GMT",
-                "Server": "Apache",
-                "Upgrade": "h2",
-                "Connection": "Upgrade",
-                "Vary": "Accept-Encoding",
-                "X-Frame-Options": "SAMEORIGIN",
-                "Transfer-Encoding": "chunked",
-                "Content-Type": "text/plain;charset=UTF-8"
-            },
-            "status_code": 200,
-            "type": "ok"
-        }
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "X-Api-Key": "***",
+        "SentWith": "elixir-test"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://gateway.seven.io/api/contacts?action=read&json=1"
+    },
+    "response": {
+      "binary": false,
+      "body": "[{\"ID\":\"12297226\",\"Name\":\"\",\"Number\":\"\",\"Impfdatum\":null},{\"ID\":\"12297238\",\"Name\":\"\",\"Number\":\"\",\"Impfdatum\":null},{\"ID\":\"12297237\",\"Name\":\"\",\"Number\":\"\",\"Impfdatum\":null},{\"ID\":\"12297236\",\"Name\":\"\",\"Number\":\"\",\"Impfdatum\":null},{\"ID\":\"12297235\",\"Name\":\"\",\"Number\":\"\",\"Impfdatum\":null},{\"ID\":\"12297234\",\"Name\":\"\",\"Number\":\"\",\"Impfdatum\":null},{\"ID\":\"12297233\",\"Name\":\"\",\"Number\":\"\",\"Impfdatum\":null},{\"ID\":\"12297232\",\"Name\":\"\",\"Number\":\"\",\"Impfdatum\":null},{\"ID\":\"12297231\",\"Name\":\"\",\"Number\":\"\",\"Impfdatum\":null},{\"ID\":\"12297230\",\"Name\":\"\",\"Number\":\"\",\"Impfdatum\":null},{\"ID\":\"12297229\",\"Name\":\"\",\"Number\":\"\",\"Impfdatum\":null},{\"ID\":\"12297228\",\"Name\":\"\",\"Number\":\"\",\"Impfdatum\":null},{\"ID\":\"12297224\",\"Name\":\"\",\"Number\":\"\",\"Impfdatum\":null},{\"ID\":\"12242153\",\"Name\":\"\",\"Number\":\"\",\"Impfdatum\":null},{\"ID\":\"12241518\",\"Name\":\"\",\"Number\":\"+4999999999\",\"Impfdatum\":null},{\"ID\":\"12241517\",\"Name\":\"\",\"Number\":\"\",\"Impfdatum\":null},{\"ID\":\"12241514\",\"Name\":\"\",\"Number\":\"\",\"Impfdatum\":null},{\"ID\":\"7434577\",\"Name\":\"Danit Dunphy\",\"Number\":\"003809919538641\",\"Impfdatum\":null},{\"ID\":\"7434578\",\"Name\":\"Karly Nabbs\",\"Number\":\"004209391717119\",\"Impfdatum\":null},{\"ID\":\"5668091\",\"Name\":\"Matthies, Andre\",\"Number\":\"0049176612547996\",\"Impfdatum\":\"\"},{\"ID\":\"12246016\",\"Name\":\"Tom Tester\",\"Number\":\"+491716992343\",\"Impfdatum\":null},{\"ID\":\"12246015\",\"Name\":\"Tom Tester\",\"Number\":\"+491716992343\",\"Impfdatum\":null},{\"ID\":\"12242154\",\"Name\":\"Tommy Testersen\",\"Number\":\"\",\"Impfdatum\":null},{\"ID\":\"12241515\",\"Name\":\"Tommy Testersen\",\"Number\":\"\",\"Impfdatum\":null}]",
+      "headers": {
+        "Date": "Thu, 31 Aug 2023 12:04:35 GMT",
+        "Server": "Apache",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "application/json"
+      },
+      "status_code": 200,
+      "type": "ok"
     }
+  }
 ]

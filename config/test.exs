@@ -1,5 +1,10 @@
 import Config
 
-config :sms77, api_key: "E7IhEbGz3YKVv7BgOyIhr2cs9ikIn8ssXpymLgtoR1AsvtAl0xwjOqkAuDJN1WoW"
+config :seven, api_key: System.get_env("SEVEN_API_KEY")
 
-config :sms77, sent_with: "elixir-test"
+config :seven, sent_with: "elixir-test"
+
+config :exvcr, [
+  filter_request_headers: ["X-Api-Key"],
+  response_headers_blacklist: ["X-sms77-trace-id"]
+]

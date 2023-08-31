@@ -1,9 +1,9 @@
-defmodule Sms77.Mixfile do
+defmodule Seven.Mixfile do
   use Mix.Project
 
   def project do
     [
-      app: :sms77,
+      app: :seven,
       deps: deps(),
       docs: [
         readme: "README.md",
@@ -12,7 +12,10 @@ defmodule Sms77.Mixfile do
       description: description(),
       elixir: "~> 1.7",
       package: package(),
-      source_url: "https://github.com/sms77io/elixir-client",
+      preferred_cli_env: [
+        vcr: :test, "vcr.delete": :test, "vcr.check": :test, "vcr.show": :test
+      ],
+      source_url: "https://github.com/seven-io/elixir-client",
       version: "0.1.0",
     ]
   end
@@ -25,17 +28,17 @@ defmodule Sms77.Mixfile do
 
   defp description do
     """
-    A basic Elixir wrapper for the sms77 SMS Gateway API.
+    The official Elixir wrapper for the seven.io API.
     """
   end
 
   defp deps do
     [
       {:elixir_uuid, "~> 1.2"},
-      {:ex_doc, "~> 0.24", only: :dev, runtime: false},
-      {:exvcr, "~> 0.12", only: :test},
-      {:httpoison, "~> 1.8"},
-      {:jason, "~> 1.2"},
+      {:ex_doc, "~> 0.30", only: :dev, runtime: false},
+      {:exvcr, "~> 0.14", only: :test},
+      {:httpoison, "~> 2.1"},
+      {:jason, "~> 1.4"},
     ]
   end
 
@@ -44,9 +47,9 @@ defmodule Sms77.Mixfile do
       files: ["lib", "mix.exs", "README.md", "LICENSE"],
       licenses: ["MIT"],
       links: %{
-        "GitHub" => "https://github.com/sms77io/elixir-client"
+        "GitHub" => "https://github.com/seven-io/elixir-client"
       },
-      maintainers: ["sms77 e.K."],
+      maintainers: ["seven communications GmbH & Co. KG"],
     ]
   end
 end

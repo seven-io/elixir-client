@@ -3,26 +3,25 @@
     "request": {
       "body": "action=subscribe&event_type=all&target_url=ThisShouldBeAUrl",
       "headers": {
-        "X-Api-Key": "E7IhEbGz3YKVv7BgOyIhr2cs9ikIn8ssXpymLgtoR1AsvtAl0xwjOqkAuDJN1WoW",
+        "X-Api-Key": "***",
         "SentWith": "elixir-test"
       },
       "method": "post",
       "options": [],
       "request_body": "",
-      "url": "https://gateway.sms77.io/api/hooks"
+      "url": "https://gateway.seven.io/api/hooks"
     },
     "response": {
       "binary": false,
-      "body": "{\"success\":false,\"code\":null,\"error_message\":\"Invalid event type (all)\"}",
+      "body": "{\"success\":false,\"code\":null,\"error_message\":\"Invalid URL\"}",
       "headers": {
-        "Date": "Wed, 07 Apr 2021 12:13:33 GMT",
+        "Date": "Thu, 31 Aug 2023 12:06:11 GMT",
         "Server": "Apache",
         "Upgrade": "h2",
         "Connection": "Upgrade",
-        "Vary": "Accept-Encoding",
         "X-Frame-Options": "SAMEORIGIN",
         "Transfer-Encoding": "chunked",
-        "Content-Type": "text/plain; charset=utf-8"
+        "Content-Type": "application/json"
       },
       "status_code": 200,
       "type": "ok"

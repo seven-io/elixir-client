@@ -1,28 +1,25 @@
 [
   {
     "request": {
-      "body": "action=subscribe&event_type=all&request_method=POST&target_url=https%3A%2F%2Fmy.tld%2F88751a07-ce3e-4e4c-953d-a46e452c9609",
+      "body": "action=subscribe&event_type=all&request_method=POST&target_url=https%3A%2F%2Fmy.tld%2Fb62c11ff-7b95-49e8-ab90-1afb34d0583f",
       "headers": {
-        "X-Api-Key": "E7IhEbGz3YKVv7BgOyIhr2cs9ikIn8ssXpymLgtoR1AsvtAl0xwjOqkAuDJN1WoW",
+        "X-Api-Key": "***",
         "SentWith": "elixir-test"
       },
       "method": "post",
       "options": [],
       "request_body": "",
-      "url": "https://gateway.sms77.io/api/hooks"
+      "url": "https://gateway.seven.io/api/hooks"
     },
     "response": {
       "binary": false,
-      "body": "{\"success\":true,\"code\":null,\"id\":849}",
+      "body": "{\"success\":true,\"code\":null,\"id\":2045}",
       "headers": {
-        "Date": "Wed, 07 Apr 2021 12:13:41 GMT",
+        "Date": "Thu, 31 Aug 2023 12:06:12 GMT",
         "Server": "Apache",
-        "Upgrade": "h2",
-        "Connection": "Upgrade",
-        "Vary": "Accept-Encoding",
         "X-Frame-Options": "SAMEORIGIN",
         "Transfer-Encoding": "chunked",
-        "Content-Type": "text/plain; charset=utf-8"
+        "Content-Type": "application/json"
       },
       "status_code": 200,
       "type": "ok"

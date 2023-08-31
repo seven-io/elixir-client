@@ -3,21 +3,20 @@
     "request": {
       "body": "",
       "headers": {
-        "X-Api-Key": "E7IhEbGz3YKVv7BgOyIhr2cs9ikIn8ssXpymLgtoR1AsvtAl0xwjOqkAuDJN1WoW",
+        "X-Api-Key": "***",
         "SentWith": "elixir-test"
       },
       "method": "delete",
       "options": [],
       "request_body": "",
-      "url": "https://gateway.sms77.io/api/sms?ids={\"ids\":[]}"
+      "url": "https://gateway.seven.io/api/sms?ids={\"ids\":[]}"
     },
     "response": {
       "binary": false,
       "body": "{\"success\":false,\"deleted\":null}",
       "headers": {
-        "Date": "Fri, 01 Apr 2022 15:38:31 GMT",
+        "Date": "Thu, 31 Aug 2023 12:38:43 GMT",
         "Server": "Apache",
-        "X-sms77-trace-id": "461067310",
         "Upgrade": "h2",
         "Connection": "Upgrade",
         "X-Frame-Options": "SAMEORIGIN",

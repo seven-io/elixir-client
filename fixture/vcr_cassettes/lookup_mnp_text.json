@@ -1,21 +1,21 @@
 [
   {
     "request": {
-      "body": "number=491771783130&type=mnp",
+      "body": "number=491716992343&type=mnp",
       "headers": {
-        "X-Api-Key": "E7IhEbGz3YKVv7BgOyIhr2cs9ikIn8ssXpymLgtoR1AsvtAl0xwjOqkAuDJN1WoW",
+        "X-Api-Key": "***",
         "SentWith": "elixir-test"
       },
       "method": "post",
       "options": [],
       "request_body": "",
-      "url": "https://gateway.sms77.io/api/lookup"
+      "url": "https://gateway.seven.io/api/lookup"
     },
     "response": {
       "binary": false,
-      "body": "eplus",
+      "body": "d1",
       "headers": {
-        "Date": "Wed, 07 Apr 2021 12:16:06 GMT",
+        "Date": "Thu, 31 Aug 2023 12:14:14 GMT",
         "Server": "Apache",
         "Upgrade": "h2",
         "Connection": "Upgrade",

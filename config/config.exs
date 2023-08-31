@@ -1,6 +1,6 @@
 import Config
 
-config :sms77, api_key: System.get_env("SMS77_API_KEY")
-config :sms77, sent_with: "elixir"
+config :seven, api_key: System.get_env("SEVEN_API_KEY")
+config :seven, sent_with: "elixir"
 
 import_config "#{config_env()}.exs"

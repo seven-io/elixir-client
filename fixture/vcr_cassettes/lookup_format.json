@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "number=491716992343&type=format",
+      "headers": {
+        "X-Api-Key": "***",
+        "SentWith": "elixir-test"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://gateway.seven.io/api/lookup"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"success\":true,\"national\":\"0171 6992343\",\"international\":\"+491716992343\",\"international_formatted\":\"+49 171 6992343\",\"country_name\":\"Germany\",\"country_code\":\"49\",\"country_iso\":\"DE\",\"carrier\":\"T-Mobile\",\"network_type\":\"mobile\"}",
+      "headers": {
+        "Date": "Thu, 31 Aug 2023 12:14:15 GMT",
+        "Server": "Apache",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Transfer-Encoding": "chunked",
+        "Content-Type": "application/json"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

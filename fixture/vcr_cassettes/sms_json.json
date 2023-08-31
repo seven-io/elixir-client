@@ -1,23 +1,22 @@
 [
   {
     "request": {
-      "body": "from=Elixir&json=1&text=HI2U!&to=%2B491771783130",
+      "body": "from=Elixir&json=1&text=HI2U!&to=%2B49179999999999",
       "headers": {
-        "X-Api-Key": "E7IhEbGz3YKVv7BgOyIhr2cs9ikIn8ssXpymLgtoR1AsvtAl0xwjOqkAuDJN1WoW",
+        "X-Api-Key": "***",
         "SentWith": "elixir-test"
       },
       "method": "post",
       "options": [],
       "request_body": "",
-      "url": "https://gateway.sms77.io/api/sms"
+      "url": "https://gateway.seven.io/api/sms"
     },
     "response": {
       "binary": false,
-      "body": "{\"success\":\"100\",\"total_price\":0,\"balance\":15.608,\"debug\":\"true\",\"sms_type\":\"direct\",\"messages\":[{\"id\":null,\"sender\":\"Elixir\",\"recipient\":\"491771783130\",\"text\":\"HI2U!\",\"encoding\":\"gsm\",\"label\":null,\"parts\":1,\"price\":0,\"success\":true,\"error\":null,\"error_text\":null}]}",
+      "body": "{\"success\":\"100\",\"total_price\":0.075,\"balance\":54.013,\"debug\":\"false\",\"sms_type\":\"direct\",\"messages\":[{\"id\":\"77214945865\",\"sender\":\"Elixir\",\"recipient\":\"49179999999999\",\"text\":\"HI2U!\",\"encoding\":\"gsm\",\"label\":null,\"parts\":1,\"udh\":null,\"is_binary\":false,\"price\":0.075,\"success\":true,\"error\":null,\"error_text\":null}]}",
       "headers": {
-        "Date": "Fri, 01 Apr 2022 15:26:01 GMT",
+        "Date": "Thu, 31 Aug 2023 12:39:57 GMT",
         "Server": "Apache",
-        "X-sms77-trace-id": "461043776",
         "Upgrade": "h2",
         "Connection": "Upgrade",
         "X-Frame-Options": "SAMEORIGIN",

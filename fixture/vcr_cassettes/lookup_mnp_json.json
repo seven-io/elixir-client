@@ -1,28 +1,25 @@
 [
   {
     "request": {
-      "body": "json=1&number=491771783130&type=mnp",
+      "body": "json=1&number=491716992343&type=mnp",
       "headers": {
-        "X-Api-Key": "E7IhEbGz3YKVv7BgOyIhr2cs9ikIn8ssXpymLgtoR1AsvtAl0xwjOqkAuDJN1WoW",
+        "X-Api-Key": "***",
         "SentWith": "elixir-test"
       },
       "method": "post",
       "options": [],
       "request_body": "",
-      "url": "https://gateway.sms77.io/api/lookup"
+      "url": "https://gateway.seven.io/api/lookup"
     },
     "response": {
       "binary": false,
-      "body": "{\"success\":true,\"code\":100,\"price\":0.005,\"mnp\":{\"country\":\"DE\",\"number\":\"+491771783130\",\"national_format\":\"0177 1783130\",\"international_formatted\":\"+49 177 1783130\",\"network\":\"Telef\\u00f3nica Germany GmbH & Co. oHG (O2)\",\"mccmnc\":\"26203\",\"isPorted\":false}}",
+      "body": "{\"success\":true,\"code\":100,\"price\":0.005,\"mnp\":{\"country\":\"DE\",\"number\":\"+491716992343\",\"national_format\":\"0171 6992343\",\"international_formatted\":\"+49 171 6992343\",\"network\":\"Telekom Deutschland GmbH\",\"mccmnc\":\"26201\",\"isPorted\":false,\"network_type\":\"mobile\"}}",
       "headers": {
-        "Date": "Wed, 07 Apr 2021 12:16:02 GMT",
+        "Date": "Thu, 31 Aug 2023 12:14:15 GMT",
         "Server": "Apache",
-        "Upgrade": "h2",
-        "Connection": "Upgrade",
-        "Vary": "Accept-Encoding",
         "X-Frame-Options": "SAMEORIGIN",
         "Transfer-Encoding": "chunked",
-        "Content-Type": "text/plain; charset=utf-8"
+        "Content-Type": "application/json"
       },
       "status_code": 200,
       "type": "ok"
