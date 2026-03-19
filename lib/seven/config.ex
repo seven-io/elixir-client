@@ -8,24 +8,24 @@ defmodule Seven.Config do
 
   ### Examples
 
-      iex> Application.put_env(:seven, :api_key, "your apikey")
+      iex> Application.put_env(:seven_io, :api_key, "your apikey")
       iex> Seven.Config.api_key!()
       "your apikey"
 
   """
   @spec api_key!() :: String.t() | no_return
-  def api_key!, do: Application.fetch_env!(:seven, :api_key)
+  def api_key!, do: Application.fetch_env!(:seven_io, :api_key)
 
   @doc """
   Return configured origin parameter
 
   ### Examples
 
-      iex> Application.put_env(:seven, :sent_with, "elixir")
+      iex> Application.put_env(:seven_io, :sent_with, "elixir")
       iex> Seven.Config.sent_with!()
       "elixir"
 
   """
   @spec sent_with!() :: String.t() | no_return
-  def sent_with!, do: Application.fetch_env!(:seven, :sent_with)
+  def sent_with!, do: Application.fetch_env!(:seven_io, :sent_with)
 end

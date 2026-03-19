@@ -3,21 +3,22 @@ defmodule Seven.Mixfile do
 
   def project do
     [
-      app: :seven,
+      app: :seven_io,
       deps: deps(),
       docs: [
         readme: "README.md",
         main: "README"
       ],
       description: description(),
-      elixir: "~> 1.7",
+      elixir: "~> 1.14",
       package: package(),
-      preferred_cli_env: [
-        vcr: :test, "vcr.delete": :test, "vcr.check": :test, "vcr.show": :test
-      ],
       source_url: "https://github.com/seven-io/elixir-client",
-      version: "0.1.0",
+      version: "0.1.1",
     ]
+  end
+
+  def cli do
+    [preferred_envs: [vcr: :test, "vcr.delete": :test, "vcr.check": :test, "vcr.show": :test]]
   end
 
   def application do

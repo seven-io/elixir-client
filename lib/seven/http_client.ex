@@ -12,7 +12,7 @@ defmodule Seven.HTTPClient do
 
   ### Examples
 
-      iex> Application.put_env(:seven, :api_key, "Your API key")
+      iex> Application.put_env(:seven_io, :api_key, "Your API key")
       iex> Seven.HTTPClient.process_request_url("balance")
       "https://gateway.seven.io/api/balance"
 
@@ -39,11 +39,11 @@ defmodule Seven.HTTPClient do
 
   ### Examples
 
-      iex> Application.put_env(:seven, :api_key, "Your API key")
+      iex> Application.put_env(:seven_io, :api_key, "Your API key")
       iex> Seven.HTTPClient.process_request_headers([])
       [{"X-Api-Key", "Your API key"}]
 
-      iex> Application.put_env(:seven, :api_key, "Bearer xyz123")
+      iex> Application.put_env(:seven_io, :api_key, "Bearer xyz123")
       iex> Seven.HTTPClient.process_request_headers([])
       [{"Authorization", "Bearer xyz123"}]
 
